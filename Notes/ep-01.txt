@@ -1,0 +1,34 @@
+What is Emmet ? 
+    -  Emmet is short of codes that makes our coding more faster
+    -  It is generate and complete code for you 
+
+Difference between library and framework ?
+    -  library is someting functionality that we can implement it on single part of our project 
+    -  Framework is setof envorienment where we code actully ...it tries to provide all functionality that we can use to build a project 
+    -  library can used smallest part of your code and framerworks not 
+
+What is CDN ? why do we used it ?
+    -   CDN is content Delivery Network 
+    - it's majorly used for speed of the site 
+
+why react is known as react ? 
+    -   it's because it's core features of react or respond quickly
+
+what is cross origin in script tag ? 
+    - Cross origin is the attributes of cors policlies that the content is restricted or not 
+
+What is Difference between react and reactdom ? 
+    - React is nothing but a core javascipt code 
+    - ReactDom is the middle way to convert javascript code to that code which os browsers understands 
+
+what is Difference between react.production.js and react.development.js in cdn ? 
+    -   producion js is adding minifiers , compression and optimisations to the project so it can run speedy which development js doesn't 
+
+what are async and defer ? 
+
+    - async attribute is used in script when scripts is loaded during the HTML exectution...once script fetches successfully it will stops html 
+      and execute script. once it is executed then html continues. it may affect your dependent file and order structure
+    - Defer attribute used in script when scripts is loaded during the HTML exectution...once script fetches successfully it doesn't stops html 
+      to execute script. once html is executed then script will executed. it doesn't affect your dependent file and order structure. so defer is widely 
+      used attribute rather than async.
+
