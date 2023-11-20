@@ -1,1 +1,45 @@
-#heading            { color: red; }
+*                   { margin:0; padding:0; box-sizing: border-box; outline: none !important; }
+ul,li               { list-style-type: none; }
+.container          { max-width: 1550px; margin-inline:auto; }
+img                 { max-width: 100%; }
+/* Header */
+.header-bar         { padding:12px 60px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); }
+.logo-box img       { width:100px; }
+.navbar ul          {  display: flex; align-items: center;  }
+.navbar ul li       { padding:0 20px; font-size: 20px; line-height: 32px; color:#121212; }
+.navbar ul li img   { width:40px; }
+.navbar ul li.cart  { position: relative; }
+.navbar ul li.cart  span { position: absolute; top:-5px; right:10px; display: inline-flex; align-items: center; justify-content: center;  width: 20px; height: 20px; border-radius: 50%; background-color: #F89C28; color:#000; font-size: 16px; line-height: 24px;  }
+/* Search Box */
+.Card               { margin:60px 0; padding: 1px; border-radius: var(--border-radius); background: transparent; overflow: hidden; box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px #c8d8e7; width: 380px; }
+.CardInner          { padding: 16px 16px; background-color: transparent; border-radius: var(--border-radius); }
+.containerbox       { display: flex; }
+.Icon               { border:0; box-shadow: none; background-color: transparent; cursor: pointer; min-width: 46px; min-height: 46px; display: flex; align-items: center; justify-content: center; border-radius: var(--border-radius); margin-right: 12px; box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.6), 2px 2px 12px #c8d8e7; }
+.Icon svg           { transform: translate(-1px, -1px); }
+label               { font-family: "Hind", sans-serif; display: block; color: #3c4b66; margin-bottom: 12px; background: linear-gradient(45deg, #6b7b8f, #3c4b66); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.InputContainer     { width: 100%; }
+input               { background-color: transparent; padding: 16px 32px; border: none; display: block; font-family: "Orbitron", sans-serif; font-weight: 600; color: #a9b8c9; -webkit-appearance: none; transition: all 240ms ease-out; width: 100%; }
+input::placeholder  { color: #6d7f8f; }
+input:focus         { outline: none; color: #6d7f8f; background-color: transparent; }
+.InputContainer     { --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3; --bottom-shadow: inset -2px -2px 4px rgba(255,255,255, .7); position: relative; border-radius: var(--border-radius); overflow: hidden; }
+.InputContainer:before, .InputContainer:after { left: 0; top: 0; display: block; content: ""; pointer-events: none; width: 100%; height: 100%; position: absolute; }
+.InputContainer:before { box-shadow: var(--bottom-shadow); }
+.InputContainer:after { box-shadow: var(--top-shadow); }
+/* Restaur Card */
+.header-bottom-menu     { display: flex; align-items: center; justify-content: space-between;  }
+.filter-btn             { padding:12px 20px; background-color: #121212; color:#fff; cursor: pointer; border:2px solid transparent; font-size: 18px; line-height: 26px; border-radius: 8px; transition: all 0.4s ease;}
+.filter-btn:hover      { background-color: transparent; color: #121212; border-color: #121212;  }
+.res-container        { display: flex; flex-wrap: wrap; }
+.restaurantscards     { padding:10px; width: calc(100%/4);  }
+.restaurantscards img { max-height: 260px; object-fit: cover; width: 100%; border-radius: 24px;}
+.restaurantscards h4  { margin:12px 0; font-size: 24px; line-height: 32px; }
+.restaurantscards h5  { margin: 0 5px; font-size:16px; line-height: 24px; color:gray; }
+.restaurantscards h6  { margin-bottom:10px; font-size: 18px; line-height: 26px; color:rgba(95, 95, 95, 0.9); }
+.restwrapper          { display: flex; align-items: center; justify-content: space-between;  }
+/* Shimmer UI */
+.shimmer-container      { display: flex; flex-wrap: wrap; }
+.shim-card             { padding:10px; width: calc(100%/4); }
+.shim-card > *          { margin:8px 0; }
+.shim-card .img-box    { width:100%; height:180px; border-radius: 8px; background-color: #f0f0f0; }
+.shim-card .data-long  { width: 80%; height:15px; border-radius: 6px;  background-color: #f0f0f0; }
+.shim-card .data-short  { width: 50%; height:10px; border-radius: 6px;  background-color: #f0f0f0; }

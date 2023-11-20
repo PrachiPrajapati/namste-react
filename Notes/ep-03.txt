@@ -1,0 +1,21 @@
+what is jsx ? 
+    - jsx is a looks like HTML code and it's  written inside the react 
+
+superpower of jsx
+    - jsx is simple way to write react elements 
+
+Role of 'type' attribute in script tage ? what other option i can use there
+
+    - it's represent the type of javascript 
+    - when doesn't give any type it's will adapt default which is MIME type 
+    - and other is module 
+        - module type javascript which we will use in react
+
+{TitleComponent} vs {<TitleComponent />} vs { <TitleComponent> </TitleComponent> } 
+
+    - it's just different ways to write 
+    - when need of variables you can use {TitleComponent}
+    - other is {<TitleComponent />} is returning jsx code 
+
+
+

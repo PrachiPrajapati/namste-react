@@ -1,0 +1,22 @@
+what is difference between Named export and Default and * as export ? 
+    - Named Export 
+        - perticualr export or multiple export from same file 
+        - just write start at the component 
+        - and import it in the { } curly brackets
+    - Default Export 
+        - Export whole component 
+    - * Export 
+        - it will export Named and default export
+
+What is the importance if config.js file ? 
+    - some constant codes and urls 
+
+What is React Hooks ? 
+    - It's just a normal javascript function which comes along with some functionality
+
+why do we need a useState hook ? 
+    - usestate hook is a state varible which can re rendered a react component whenever it's update 
+    - it'll automatically update the UI once data changed or filterd
+
+    
+

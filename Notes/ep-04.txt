@@ -1,0 +1,42 @@
+Is jsx mandatory for React ? 
+    - its is not mandatory but for the easyness of frontend coding and react elements we should use this 
+Is ES6 mandatory for React ? 
+    - not mandatory.. Es6 is the standarlised for javascript..it is easy and much readable 
+
+How can i write comments in jsx ? 
+    - {/* The comments */}
+
+What is react Fragment ? 
+    <React.Fragment></React.Fragment> and <></> - both are same 
+
+    - its allows to render multiile elements 
+
+what is virtual dom ? 
+    - virtual dom is lightweight copy of real dom 
+    - which is maintained by ReactDom Js library 
+    - it is render only changed elements to prevents re-redering of all elements 
+    - performance time is fast
+
+what is reconciliation in react ? 
+    - Its is the process through when react updates the browserdom
+
+What is react fiber ? 
+    - its for responsiveness and gesture to the element 
+
+why we need keys in react ? when do we need key in react ? 
+    - Keys for the unique identification...so that react is only update changed id's and not re-render all the elements....when creating a loop 
+
+can we use index as a key ? 
+    - we can..but it;s not recommanded... as index is at the end of the number...it's create issue if order of items may change.
+
+what is props in react? ways to
+- properies 
+    - pass the some values to the components 
+        - at the end of the day it's passing an arguments to the function 
+what is a config driven ui ?
+    - if data is not present then that section ui is not display 
+    - LIKE IF condition 
+
+
+
+
