@@ -4,6 +4,7 @@ import { useState ,useEffect } from 'react'
 import Shimmer from './Shimmer'
 const Body = () => {
     const [resList,setResList] = useState([]);
+    const [filterRes,setFilterRes] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     useEffect(() => {
         fetchdata();
@@ -14,13 +15,14 @@ const Body = () => {
         const filtered = resList.filter((item) =>
           item.info.name.toLowerCase().includes(value.toLowerCase())
         );
-            setResList(filtered);
+            setFilterRes(filtered);
       };
     const fetchdata = async () => {
         const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=23.0283064&lng=72.4993918&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
         const json = await data.json();
         console.log(json);
         setResList(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+        setFilterRes(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
     if(resList.length === 0) {
         return <Shimmer />
@@ -36,7 +38,7 @@ const Body = () => {
         <div className="container">
             <div className="res-container">
                 {
-                    resList.map((restaurants) => {
+                    filterRes.map((restaurants) => {
                         return <Restaurantscard key={restaurants.info.id} {...restaurants.info}/>
                     })
                 }

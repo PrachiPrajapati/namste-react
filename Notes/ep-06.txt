@@ -1,0 +1,11 @@
+What is Microservice ? 
+    - It's one type of the project 
+        - In this type project there are diffrent micro services like backend , frontend , Ads , API , etc
+        - it is independtly services 
+
+What is monolith architecture ? 
+    - It's one type of the project 
+        - In this project all services are combined used 
+
+What is difference between monolith and Microservice ? 
+    - In Microservice its is independtly services we can use itr seperatly while monolith architecture having a dependent services on each other and in the same project
